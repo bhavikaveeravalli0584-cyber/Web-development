@@ -1,0 +1,70 @@
+body{
+    background-color:#b56a57;
+    padding:16px;
+    font-size:23px;
+    text-align:center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 36px;
+}
+#form {
+    max-width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 12px rgba(22, 12, 11, 0.1);
+    text-align: left;
+    margin: 20px auto;
+    padding : 25px 30px;
+    border-radius:12px;
+}
+
+.form-label {
+    display:block;
+    padding:10px;
+    box-sizing:border-box;
+}
+
+input[type="text"], input[type="email"], input[type="number"] , select,textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid #f12020;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.25s , box-shadow 0.3s ;
+}
+
+input:focus , select:focus, textarea:focus {
+    border-color:#b56a57;
+    outline: none;
+    box-shadow: 0 0 3px rgba(181, 106, 87, 0.2);
+}
+
+
+.options-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+button[type="submit"] {
+    background-color:#b56a57; 
+    padding : 12px;
+    width: 100%;
+    color:#ffffff;
+    border:none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.25s;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+
+button :hover{
+    background-color:#965241;
+}

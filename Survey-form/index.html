@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Survey Form </h1>
+
+    <p id="description"> Thank you for reaching us ! <br/>
+    Please fill the details below </p>
+
+    <form id="form">
+
+      <label id="name-label" class = "form-label"> Enter Your Name: </label>
+      <input id="name" type="text" required placeholder="Your Name"> </br></br>
+      <label id="email-label"> Enter Your email-address: </label> 
+      <input id="email" type="email" required placeholder="name@gmail.com">
+      </br></br>
+      <label id="number-label" class = "form-label"> Enter Your Number: </label>
+      <input id="number" type="number" minlength="10" maxlength="10" placeholder="0000000000" required> </br></br>
+      <select id="dropdown"> 
+        <option value="Select your region"> Select your region </option>
+        <option value="North india"> North India </option>
+        <option value="South India"> South India </option>
+      </select> <br/> <br/>
+      <label id="gender-label" class = "form-label"> Select your Gender: </label>
+      Female
+      <input type="radio" name="Gender" value="Female"> Male
+      <input type="radio" name="Gender" value="Male"> <br/> <br/>
+      <label id="sports-label" class = "form-label"> Select your favourite Sports: </label>
+      Cricket <input type="checkbox" name="sports" value="cricket">
+      Tennis
+      <input type="checkbox" name="sports" value="tennis">
+      <br/><br/>
+      Enter your Address :<br/><br/>
+      <textarea rows="5" cols="36" id="message"> </textarea><br/><br/>
+      <button id="submit" type="submit"> Submit </button>
+      <p id="form-message"></p> 
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
